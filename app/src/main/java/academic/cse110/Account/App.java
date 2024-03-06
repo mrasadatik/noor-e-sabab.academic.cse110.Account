@@ -52,7 +52,7 @@ class Account {
     }
     
     public double getMonthlyInterestRate() {
-        return annualInterestRate / 12 / 100;
+        return (annualInterestRate / 12 ) / 100;
     }
     
     public double getMonthlyInterest() {
