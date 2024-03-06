@@ -3,23 +3,19 @@ package academic.cse110.Account;
 import java.util.Date;
 
 class Account {
-    private int id;
-    private double balance;
-    private double annualInterestRate;
-    @SuppressWarnings("FieldMayBeFinal")
+    private int id = 0;
+    private double balance = 0.0;
+    private double annualInterestRate = 0.0;
     private Date dateCreated;
     
     public Account() {
-        id = 0;
-        balance = 0.0;
-        annualInterestRate = 0.0;
+        // A no-arg constructor creates a default account.
         dateCreated = new Date();
     }
     
     public Account(int id, double balance) {
         this.id = id;
         this.balance = balance;
-        annualInterestRate = 0.0;
         dateCreated = new Date();
     }
     
